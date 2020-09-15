@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [7, 12, 6, 9, 20, 56, 89];
+    let min = findMin(array);
+    document.write("min = "+min);
+
+    function findMin(arraya){
+        let min = arraya[0];
+        for (let i = 1;i < arraya.length;i++){
+            if (min > arraya[i]){
+                min = arraya[i];
+            }
+        }
+        return min;
+    }
+</script>
+</body>
+</html>
